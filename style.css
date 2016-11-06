@@ -1,0 +1,157 @@
+button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}/*# sourceMappingURL=normalize.min.css.map */
+
+.app {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #222;
+}
+
+.app {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header {
+  background: #222;
+  height: 100px;
+  color: #ddd;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-user-select: none;
+}
+
+.header__title {
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0;
+  cursor: default;
+}
+
+.header__hower {
+  transition: 1s;
+  animation-name: koalaTitle;
+  animation-duration: 3s;
+}
+
+
+.header__hower:nth-child(1) {
+  animation-delay: .2s;
+}
+
+.header__hower:nth-child(2) {
+  animation-delay: .4s;
+}
+
+.header__hower:nth-child(3) {
+  animation-delay: .6s;
+}
+
+.header__hower:nth-child(4) {
+  animation-delay: .8s;
+}
+
+.header__hower:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.header__hower:hover {
+  color: #4BBBFA;
+}
+
+@keyframes koalaTitle {
+  0% {
+    color: #ddd;
+  }
+
+  50% {
+    color: #4BBBFA;
+  }
+
+  100% {
+    color: #ddd;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigation__item {
+  margin: 10px;
+  color: #ddd;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+}
+
+.navigation__item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  height: 0px;
+  width: 100%;
+  background: #4BBBFA;
+  transition: .2s;
+}
+.navigation__item:hover:before {
+  height: 7px;
+}
+
+.navigation__github {
+  height: 30px;
+  margin: 10px;
+  transition: fill .3s;
+}
+
+.navigation__github:hover {
+  fill: #4BBBFA;
+}
+
+.about__title {
+  font-weight: 900;
+  color: #4BBBFA;
+}
+
+.footer {
+  background: #222;
+  height: 50px;
+  color: #ddd;
+  padding: 15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.lang__item {
+  padding: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+
+.lang__item:hover, .lang__item.active {
+  color: #4BBBFA;
+}
