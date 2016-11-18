@@ -19,7 +19,7 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 
 .header {
   background: #222;
-  height: 100px;
+  height: 50px;
   color: #ddd;
   padding: 15px;
   display: flex;
