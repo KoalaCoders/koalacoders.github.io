@@ -17,7 +17,7 @@ window.translations = {
     }
   },
   about: {
-    header: {
+    title: {
       en: 'About',
       uk: 'Хто ми',
       ru: 'Кто мы'
@@ -27,6 +27,39 @@ window.translations = {
       uk: 'Чудова історія коали',
       ru: 'Наша мега офигенная история'
     }
+  },
+  team: {
+    title: {
+      en: 'Team',
+      uk: 'Команда',
+      ru: 'Команда'
+    },
+    vuchkan: {
+      en: 'Volodimir Vuchkan',
+      uk: 'Володимир Вучкан',
+      ru: 'Вадимир Вучкан'
+    },
+    klinec: {
+      en: 'Viktor Klinec',
+      uk: 'Віктор Клинець',
+      ru: 'Виктор Клинец'
+    },
+    motornyi: {
+      en: 'Ihor Motornyi',
+      uk: 'Ігор Моторний',
+      ru: 'Игорь Моторный'
+    },
+    rudnytskykh: {
+      en: 'Dmytro Rudnytskykh',
+      uk: 'Дмитро Рудницьких',
+      ru: 'Дмитрий Рудницких'
+    },
+    stetsenko: {
+      en: 'Ivan Stetsenko',
+      uk: 'Іван Стеценко',
+      ru: 'Иван Стеценко'
+    },
+
   }
 };
 

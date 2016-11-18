@@ -26,6 +26,7 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   align-items: center;
   justify-content: space-between;
   -webkit-user-select: none;
+  flex-shrink: 0;
 }
 
 .header__title {
@@ -118,11 +119,6 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   fill: #4BBBFA;
 }
 
-.about__title {
-  font-weight: 900;
-  color: #4BBBFA;
-}
-
 .footer {
   background: #222;
   height: 50px;
@@ -135,6 +131,7 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .lang {
@@ -151,7 +148,58 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   transition: .3s;
 }
 
+main {
+  width: 90%;
+  margin: auto;
+}
 
 .lang__item:hover, .lang__item.active {
   color: #4BBBFA;
+}
+
+.about__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: #4BBBFA;
+}
+.team__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: #4BBBFA;
+}
+
+.team__members {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.team__member {
+  flex-basis: 25%;
+  box-sizing: border-box;
+  color: #222;
+  text-decoration: none;
+}
+
+.team__photo {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 10px 10px 43px -5px rgba(0,0,0,0.31);
+-moz-box-shadow: 10px 10px 43px -5px rgba(0,0,0,0.31);
+box-shadow: 10px 10px 43px -5px rgba(0,0,0,0.31);
+}
+
+.team__name {
+  text-align: center;
 }
