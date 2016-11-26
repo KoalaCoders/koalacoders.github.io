@@ -5,6 +5,7 @@
   <title>Koala</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script async src="config/translations.js"></script>
   <script async src="index.js"></script>
 </head>
 <body>
@@ -19,14 +20,10 @@
       </h1>
 
       <nav class="navigation">
-        <a class="navigation__item" href="#about" translate="header.about"></a>
-        <a class="navigation__item" href="#team" translate="header.team"></a>
+        <a class="navigation__item active" href="https://koalacoders.github.io/" translate="header.main"></a>
         <a class="navigation__item"
            href="https://koalacoders.github.io/lections/"
           translate="header.lections">
-        </a>
-        <a href="https://github.com/KoalaCoders">
-          <svg class="navigation__github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" fill="#fff"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
         </a>
       </nav>
     </header>
@@ -83,10 +80,16 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__github"></a>
+      <div class="links">
+        <a href="https://github.com/KoalaCoders">
+          <svg class="links__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" fill="#fff"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+        </a>
+        <a href="https://gitter.im/koalaCoders">
+          <svg class="links__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M5.667 2.667H7V16H5.667V2.667zm4.666 0V16H9V2.667h1.333zM2.333 0h1.334v10H2.333V0zm10 2.667h1.334V10h-1.334V2.667z"/></svg>        </a>
+      </div>
       <div class="lang">
-        <div class="lang__item active" translate-lang="en" >en</div>
-        <div class="lang__item" translate-lang="uk" >uk</div>
+        <div class="lang__item" translate-lang="en" >en</div>
+        <div class="lang__item active" translate-lang="uk" >uk</div>
         <div class="lang__item" translate-lang="ru" >ru</div>
       </div>
     </footer>
